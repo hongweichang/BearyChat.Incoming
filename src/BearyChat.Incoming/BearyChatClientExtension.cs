@@ -29,5 +29,31 @@ namespace BearyChat.Incoming
             };
             self.Send(msg);
         }
+
+        public static void Send(this BearyChatClient self,string text,string channel,string subTitle,string subText,string color)
+        {
+            if (string.IsNullOrEmpty(text))
+                throw new ArgumentNullException(nameof(text));
+            if (string.IsNullOrEmpty(channel))
+                throw new ArgumentNullException(nameof(channel));
+            if (string.IsNullOrEmpty(subTitle))
+                throw new ArgumentNullException(nameof(subTitle));
+
+            var msg = new Message
+            {
+                Text = text,
+                Channel = channel,
+                Attachments = new List<Attachment>
+                {
+                    new Attachment
+                    {
+                        Title = subTitle,
+                        Text = subText,
+                        Color = color
+                    }
+                }
+            };
+            self.Send(msg);
+        }
     }
 }

@@ -21,5 +21,11 @@ namespace UnitTest
         {
             _client.Send("Sino程序自动发送", "所有人");
         }
+
+        [Fact]
+        public void SendWithSubTitle()
+        {
+            _client.Send("Sino程序自动发送", "所有人", "子标题", "子标题内容", "#ffa500");
+        }
     }
 }

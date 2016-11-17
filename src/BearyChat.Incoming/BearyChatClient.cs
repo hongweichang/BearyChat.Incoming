@@ -27,7 +27,7 @@ namespace BearyChat.Incoming
         {
             var content = new StringContent(JsonConvert.SerializeObject(msg));
             content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-            _httpClient.PostAsync(Url, content).Wait();
+            var response = _httpClient.PostAsync(Url, content).Result;
         }
     }
 }
