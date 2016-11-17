@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A88C6746-A79E-4D33-ADFC-A554F080D99D}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BearyChat.Incoming", "src\BearyChat.Incoming\BearyChat.Incoming.xproj", "{BECD5ECE-8EEC-4A71-9B07-02A52FDC94EC}"

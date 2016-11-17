@@ -9,7 +9,7 @@
     "dotnet-test-xunit": "2.2.0-preview2-build1029",
     "xunit": "2.2.0-beta3-build3402",
     "xunit.runner.console": "2.2.0-beta3-build3402",
-    "BearyChat.Incoming": "1.0.0-*",
+    "BearyChat.Incoming": "1.0.0-*"
   },
 
   "frameworks": {
